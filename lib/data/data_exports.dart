@@ -1,2 +1,2 @@
-
-
+export 'models/profile_model.dart';
+export 'models/project_model.dart';export 'models/service_model.dart';export 'models/testimonial_model.dart';export 'repositories/portfolio_repository.dart';export 'sources/portfolio_local_source.dart';export 'state/portfolio_provider.dart';
