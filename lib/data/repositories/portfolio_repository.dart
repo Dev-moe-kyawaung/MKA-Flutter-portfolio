@@ -1,2 +1,2 @@
-
-
+import '../models/profile_model.dart';
+import '../models/project_model.dart';import '../models/service_model.dart';import '../models/testimonial_model.dart';import '../sources/portfolio_local_source.dart';class PortfolioRepository {  final PortfolioLocalSource source;  PortfolioRepository(this.source);  ProfileModel getProfile() => source.getProfile();  List<String> getSkills() => source.getSkills();  List<ProjectModel> getProjects() => source.getProjects();  List<ServiceModel> getServices() => source.getServices();  List<TestimonialModel> getTestimonials() => source.getTestimonials();}
