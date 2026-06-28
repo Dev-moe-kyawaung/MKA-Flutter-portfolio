@@ -1,2 +1,2 @@
-
-
+import 'package:flutter/material.dart';
+import '../../../app/theme/app_colors.dart';class TestimonialCard extends StatelessWidget {  final String name;  final String role;  final String message;  const TestimonialCard({    super.key,    required this.name,    required this.role,    required this.message,  });  @override  Widget build(BuildContext context) {    return SizedBox(      width: 360,      child: Card(        child: Padding(          padding: const EdgeInsets.all(22),          child: Column(            crossAxisAlignment: CrossAxisAlignment.start,            children: [              Text(message, style: const TextStyle(color: AppColors.text, height: 1.6)),              const SizedBox(height: 14),              Text(name, style: const TextStyle(fontWeight: FontWeight.w700)),              Text(role, style: const TextStyle(color: AppColors.mutedText)),            ],          ),        ),      ),    );  }}
