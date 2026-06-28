@@ -1,2 +1,2 @@
-
-
+import 'package:flutter/material.dart';
+import '../../../app/theme/app_colors.dart';class AboutCard extends StatelessWidget {  final String title;  final String subtitle;  const AboutCard({    super.key,    required this.title,    required this.subtitle,  });  @override  Widget build(BuildContext context) {    return SizedBox(      width: 320,      child: Card(        child: Padding(          padding: const EdgeInsets.all(22),          child: Column(            crossAxisAlignment: CrossAxisAlignment.start,            children: [              Text(title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),              const SizedBox(height: 10),              Text(subtitle, style: const TextStyle(color: AppColors.mutedText, height: 1.6)),            ],          ),        ),      ),    );  }}
