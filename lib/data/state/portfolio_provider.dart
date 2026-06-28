@@ -1,2 +1,2 @@
-
-
+import 'package:flutter/material.dart';
+import '../models/profile_model.dart';import '../models/project_model.dart';import '../models/service_model.dart';import '../models/testimonial_model.dart';import '../repositories/portfolio_repository.dart';class PortfolioProvider extends ChangeNotifier {  final PortfolioRepository repository;  PortfolioProvider(this.repository);  late ProfileModel profile;  List<String> skills = [];  List<ProjectModel> projects = [];  List<ServiceModel> services = [];  List<TestimonialModel> testimonials = [];  void loadAll() {    profile = repository.getProfile();    skills = repository.getSkills();    projects = repository.getProjects();    services = repository.getServices();    testimonials = repository.getTestimonials();    notifyListeners();  }}
