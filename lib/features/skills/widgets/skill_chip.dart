@@ -1,2 +1,2 @@
-
-
+import 'package:flutter/material.dart';
+import '../../../app/theme/app_colors.dart';class SkillChip extends StatelessWidget {  final String label;  const SkillChip({super.key, required this.label});  @override  Widget build(BuildContext context) {    return Chip(      label: Text(label),      backgroundColor: AppColors.surfaceAlt,      side: const BorderSide(color: AppColors.border),      labelStyle: const TextStyle(color: AppColors.text),    );  }}
